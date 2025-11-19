@@ -1,0 +1,249 @@
+---
+---
+
+<section id="skills">
+  <div class="section-header">
+    <h2 class="section-title">Skills &amp; Stack</h2>
+    <p class="section-subtitle">
+      Un mapa rápido de en qué soy más útil: arquitectura, frontend avanzado, I+D y liderazgo técnico.
+    </p>
+  </div>
+
+  <div class="skills-chips">
+    <span>JavaScript / TypeScript</span>
+    <span>Node.js</span>
+    <span>React · Vue</span>
+    <span>Web Components</span>
+    <span>Astro</span>
+    <span>APIs REST</span>
+  </div>
+
+  <div class="skills-grid">
+    <article class="skill-card">
+      <div class="skill-card-header">
+        <span class="skill-pill">Arquitectura &amp; Backend</span>
+      </div>
+      <p class="skill-desc">
+        Diseño sistemas que se pueden desplegar, mantener y escalar, alineados con las necesidades del equipo y del negocio.
+      </p>
+
+      <details class="skill-details">
+        <summary>
+          <span>Detalles</span>
+          <span class="skill-details-icon">▼</span>
+        </summary>
+        <ul>
+          <li>Diseño de arquitectura de servicios y módulos independientes.</li>
+          <li>APIs REST, integración de sistemas y definición de contratos claros.</li>
+          <li>Modelado básico de datos (SQL / NoSQL) y flujos de información.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-card-header">
+        <span class="skill-pill">Frontend &amp; Web Platform</span>
+      </div>
+      <p class="skill-desc">
+        Vengo del frontend moderno, con foco en arquitectura de interfaz y plataformas reutilizables.
+      </p>
+
+      <details class="skill-details">
+        <summary>
+          <span>Detalles</span>
+          <span class="skill-details-icon">▼</span>
+        </summary>
+        <ul>
+          <li>React, Vue y Web Components (LitElement, diseño de design systems).</li>
+          <li>Astro y arquitecturas orientadas a performance y mantenibilidad.</li>
+          <li>Componentes reutilizables, separación de responsabilidades y buena DX.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-card-header">
+        <span class="skill-pill">I+D &amp; Delivery</span>
+      </div>
+      <p class="skill-desc">
+        Trabajo cómodo en la frontera entre investigación y producto, cerrando el gap entre el paper y el usuario final.
+      </p>
+
+      <details class="skill-details">
+        <summary>
+          <span>Detalles</span>
+          <span class="skill-details-icon">▼</span>
+        </summary>
+        <ul>
+          <li>Prototipado rápido y pruebas de concepto orientadas a aprendizaje.</li>
+          <li>Industrialización de PoCs: de demo interna a servicio estable.</li>
+          <li>Colaboración con equipos de IA, hardware y negocio para aterrizar soluciones.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-card-header">
+        <span class="skill-pill">Liderazgo técnico &amp; Colaboración</span>
+      </div>
+      <p class="skill-desc">
+        Más que “mandar tech”, intento crear contexto, claridad y buenas decisiones compartidas.
+      </p>
+
+      <details class="skill-details">
+        <summary>
+          <span>Detalles</span>
+          <span class="skill-details-icon">▼</span>
+        </summary>
+        <ul>
+          <li>Definición de visión técnica, prioridades y trade-offs.</li>
+          <li>Mentoring, pairing y revisión de código con foco en el crecimiento del equipo.</li>
+          <li>Comunicación de decisiones técnicas a perfiles no técnicos.</li>
+        </ul>
+      </details>
+    </article>
+  </div>
+</section>
+
+<style>
+  .skills-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1.6rem;
+    font-size: 0.8rem;
+  }
+
+  .skills-chips span {
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    background: rgba(15, 23, 42, 0.9);
+    color: var(--text-soft);
+    white-space: nowrap;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
+  .skill-card {
+    position: relative;
+    border-radius: 1.1rem;
+    padding: 0.95rem 1.1rem 1.1rem;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), var(--bg-alt));
+    color: var(--text-soft);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+
+    /* mismo ancho para todas en desktop */
+    width: 280px;
+    flex: 0 0 280px;
+  }
+
+  .skill-card-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .skill-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    font-size: 0.8rem;
+    color: var(--text-main);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.9);
+  }
+
+  .skill-desc {
+    font-size: 0.86rem;
+  }
+
+  .skill-details {
+    margin-top: 0.35rem;
+    border-radius: 0.7rem;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(15, 23, 42, 0.9);
+    overflow: hidden;
+  }
+
+  .skill-details summary {
+    list-style: none;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--text-main);
+    user-select: none;
+  }
+
+  .skill-details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .skill-details-icon {
+    font-size: 0.7rem;
+    opacity: 0.8;
+    transition: transform 0.18s ease-out;
+  }
+
+  .skill-details[open] .skill-details-icon {
+    transform: rotate(-180deg);
+  }
+
+  .skill-details ul {
+    list-style: none;
+    display: grid;
+    gap: 0.35rem;
+    padding: 0 0.85rem 0.7rem;
+    font-size: 0.82rem;
+    color: var(--text-soft);
+  }
+
+  .skill-details ul li {
+    position: relative;
+    padding-left: 0.9rem;
+  }
+
+  .skill-details ul li::before {
+    content: "";
+    position: absolute;
+    left: 0.25rem;
+    top: 0.6em;
+    width: 4px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--accent);
+  }
+
+  @media (max-width: 768px) {
+    .skills-chips {
+      gap: 0.35rem;
+    }
+
+    .skills-chips span {
+      font-size: 0.78rem;
+    }
+
+    .skill-card {
+      width: 100%;
+      flex: 0 0 100%;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.9);
+    }
+  }
+</style>

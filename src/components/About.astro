@@ -1,0 +1,155 @@
+---
+---
+
+<section id="sobre-mi">
+  <div class="section-header">
+    <h2 class="section-title">Sobre mí</h2>
+    <p class="section-subtitle">
+      De la teoría a la implementación: cerrando la brecha entre innovación y producto.
+    </p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-main">
+      <div class="about-main-inner">
+        <p>
+          Mi carrera es la historia de cómo se cierra la brecha entre la innovación teórica
+          y la implementación en producción.
+        </p>
+        <p>
+          Hace una década empecé no solo aprendiendo, sino construyendo desde el primer momento:
+          desde el desarrollo de una aplicación VoIP durante mi beca hasta la creación de mi primer
+          proyecto IoT low-cost (<em>Project h∞me</em>), que fue seleccionado para ser desarrollado
+          por Telefónica.
+        </p>
+        <p>
+          Este dominio temprano y acelerado de tecnologías frontend modernas
+          (React, Vue, LitElement…) me permitió asumir responsabilidades de consultoría senior muy
+          pronto, demostrando que mi nivel técnico iba por delante de mi categoría “junior” y
+          asentando las bases de mi enfoque en la arquitectura de interfaz.
+        </p>
+        <p>
+          Esa pasión por transformar ideas complejas en productos tangibles me llevó a liderar el
+          diseño de arquitecturas a gran escala, como la de Santander X basada en Web Components.
+        </p>
+        <p>
+          Actualmente, esa experiencia culmina en mi rol como Líder Técnico de I+D y consultor
+          freelance. Trabajo principalmente con IBM Research, donde mi foco está en:
+        </p>
+        <p class="about-bullets">
+          – Traducir investigación de élite (IA, Quantum, Analog Hardware…) en soluciones de software
+          listas para el usuario.<br />
+          – Aportar propiedad intelectual, siendo inventor en una patente de EE. UU.
+        </p>
+        <p class="about-highlight">
+          En esencia: mi trayectoria va del código a la comunidad, y de la teoría a la patente, con
+          una idea clara en mente: la mejor innovación es la que se puede implementar, usar y escalar.
+        </p>
+      </div>
+    </div>
+
+    <aside class="about-side">
+      <p class="about-title">Cómo trabajo</p>
+      <ul>
+        <li>Equilibrio entre calidad técnica y velocidad de entrega.</li>
+        <li>Explico decisiones técnicas de forma clara a perfiles no técnicos.</li>
+        <li>Prefiero sistemas simples, observables y bien documentados.</li>
+        <li>Disfruto acompañando a otros devs: pairing, feedback y mentoring.</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    gap: 2.2rem;
+    grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.2fr);
+    align-items: flex-start;
+  }
+
+  .about-main {
+    position: relative;
+  }
+
+  .about-main::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    bottom: 0.25rem;
+    width: 3px;
+    border-radius: 999px;
+    background: linear-gradient(to bottom, var(--accent), rgba(56, 189, 248, 0.1));
+    opacity: 0.9;
+  }
+
+  .about-main-inner {
+    padding-left: 1.25rem;
+    display: grid;
+    gap: 0.85rem;
+    font-size: 0.95rem;
+    color: var(--text-soft);
+  }
+
+  .about-main-inner em {
+    font-style: italic;
+  }
+
+  .about-bullets {
+    margin-top: 0.35rem;
+  }
+
+  .about-highlight {
+    margin-top: 0.4rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.75rem;
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    color: var(--text-main);
+    font-size: 0.9rem;
+  }
+
+  .about-side {
+    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.22), var(--bg-alt));
+    border-radius: 1.1rem;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    padding: 1.1rem 1.15rem;
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    box-shadow: 0 16px 35px rgba(15, 23, 42, 0.9);
+  }
+
+  .about-title {
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+  }
+
+  .about-side ul {
+    list-style: none;
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  .about-side li::before {
+    content: "•";
+    margin-right: 0.4rem;
+    color: var(--accent);
+  }
+
+  @media (max-width: 900px) {
+    .about-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .about-main::before {
+      left: -2px;
+    }
+
+    .about-side {
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.85);
+    }
+  }
+</style>
